@@ -13,7 +13,7 @@ message = notify2.Notification(
     icon=os.getcwd() + "/email_icon.ico")
 
 # set urgency (LOW, NORMAL, CRITICAL) (optional)
-message.set_urgency(notify2.URGENCY_CRITICAL)
+message.set_urgency(notify2.URGENCY_NORMAL)
 
 # send the notification
 message.show()
