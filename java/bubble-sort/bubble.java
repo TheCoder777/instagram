@@ -19,7 +19,7 @@ public class bubble {
 
 
     public static void main(String[] args) {
-        double[] arr = {0.95, 5.78, 4.93, 7.36, 3.25};
+        double[] arr = {0.95, 5.78, 4.93, 7.36, 3.25, 4.23};
 	// unsorted
         System.out.println(Arrays.toString(arr));
 
