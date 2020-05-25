@@ -1,6 +1,7 @@
-# @thecoder777 || Python
+# @thecoder777 || Pythonc 'server.py'
 
-""" Building a fully fleged website with Python/Flask as backend """
+""" Building a full-fledged website with Python/Flask as backend """
+
 # 'pip install flask gevent' to install all used packages
 from flask import Flask, render_template, request, redirect
 from gevent.pywsgi import WSGIServer
@@ -41,11 +42,11 @@ def get_registration_data():
                 status_color="#08da94",
                 username=username)
 
-if  __name__ == "__main__":
+if __name__ == "__main__":
     check_db()
     # development/debugging (flask default):
     # app.run(host="0.0.0.0", port=8000, debug=True)
 
-    # basic server ready for real-life usage
+    # basic server, ready for real-life usage [http://localhost:8000/]
     server = WSGIServer(('0.0.0.0', 8000), app)
     server.serve_forever()
