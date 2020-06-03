@@ -1,0 +1,28 @@
+<!-- @thecoder777 || HTML 'register.html' -->
+
+<!-- HTML template: register page -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/register.css') }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <script type="text/javascript" src="{{ url_for('static', filename='scripts/register.js') }}"></script>
+    </head>
+    <body>
+        {% if action == "register": %}
+        <h1>Welcome</h1>
+        <p class="header">Please create an account to use our service!</p>
+        <form action="" method="post">
+            <input type="text" class="form" name="email" placeholder="Email address">
+            <input type="text" class="form" name="username" placeholder="Username">
+            <input class="registerButton" type="submit" name="register" value="Register" onclick="registered( {{ message }} )">
+        </form>
+        <p class="status" color="{{ status_color }}">{{ status }}</p>
+        {% else: %}
+        <p class="final_header">Hello {{ username }},<br>welcome to our service!</p>
+        <p class="status" color="{{ status_color }}" >{{ status }}</p>
+        {% endif %}
+    </body>
+</html>
