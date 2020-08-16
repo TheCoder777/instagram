@@ -1,4 +1,4 @@
-public class enums {
+public class Enums {
     public enum Color {
         RED, GREEN, BLUE;
     }
