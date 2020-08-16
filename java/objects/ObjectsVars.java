@@ -3,7 +3,7 @@ public class ObjectsVars {
     public static class Car {
         int speed;
         String color;
-
+        // Constructor:
         public Car(int s, String c) {
             speed = s;
             color = c;
@@ -16,3 +16,8 @@ public class ObjectsVars {
         System.out.println(c1.color);
     }
 }
+
+/* Output:
+100
+green
+*/
